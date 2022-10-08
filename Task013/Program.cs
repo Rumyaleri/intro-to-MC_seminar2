@@ -11,3 +11,4 @@ Console.WriteLine($"Третья цифра числа: {findDigit}");
 }
 else 
 Console.WriteLine($"Третья цифра отсутствует");
+
