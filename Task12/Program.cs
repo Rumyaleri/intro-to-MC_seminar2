@@ -18,11 +18,3 @@ Console.WriteLine($"число {numberA} кратно {numberB}");
 else 
 Console.WriteLine($"число {numberA} не кратно {numberB}, остаток {remains}");
 
-// int Multiplicity(int numA, int numB)
-// {
-//     int result = numA % numB;
-//     if (result == 0)
-//     Console.WriteLine($"число {numberA} кратно {numberB}");
-//     else 
-//     Console.WriteLine($"число {numberA} не кратно {numberB}, остаток {remains}");
-// }
