@@ -10,14 +10,17 @@ Console.Write("Введите порядковый номер дня недел�
 int day = Convert.ToInt32(Console.ReadLine());
 if (day > 0 && day < 8)
 {
-    bool Weekend(int num)
+    Weekend();    
+}
+else
+    Console.WriteLine("введен некорректный номер");
+
+bool Weekend(int num)
     {
         return num > 5 && num < 8;
     }
+
     if (Weekend(day))
         Console.WriteLine("Это выходной день");
     else
         Console.WriteLine("это не выходной день");
-}
-else
-    Console.WriteLine("введен некорректный номер");
