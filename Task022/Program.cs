@@ -20,15 +20,33 @@
 
 // метод
 
+// Console.WriteLine("Ведите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int count = 1;
+// while (count <= number)
+// {
+//     Console.WriteLine(Square(count));
+//     count++;
+// }
+// string Square(int num)
+// {
+//     return ($"{num} -> {num * num}");
+// }
+
+// метод void
+
 Console.WriteLine("Ведите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-while (count <= number)
+
+Square(number);
+
+void Square (int num)
 {
-    Console.WriteLine(Square(count));
+    int count = 1;
+  while (count <= num)  
+  {
+    int square = count * count;
+    Console.WriteLine($"{count} | {square}");
     count++;
-}
-string Square(int num)
-{
-    return ($"{num} -> {num * num}");
+  }
 }
