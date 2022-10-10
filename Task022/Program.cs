@@ -39,6 +39,7 @@ Console.WriteLine("Ведите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 Square(number);
+// вызов метода void
 
 void Square (int num)
 {
@@ -46,7 +47,8 @@ void Square (int num)
   while (count <= num)  
   {
     int square = count * count;
-    Console.WriteLine($"{count} | {square}");
+    Console.WriteLine($"|{count, 8} | {square, 8}|");
+    // если после переменной через запятую поставить число, то значение будет выводиться в столбике с определенной шириной 
     count++;
   }
 }
