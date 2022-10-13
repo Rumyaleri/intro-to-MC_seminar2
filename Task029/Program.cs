@@ -14,7 +14,7 @@ int[] FillArray(int num)
     int[] array = new int [num];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(0, 2);
+        array[i] = new Random().Next(0, 25);
     }
     return array;
     }
@@ -23,7 +23,8 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($"{arr[i]}, ");
+        Console.Write("[{0}]", string.Join(", ", arr));
+        break;
     }
 }
 int[] myArr = FillArray(8);
