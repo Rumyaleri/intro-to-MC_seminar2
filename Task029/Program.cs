@@ -4,10 +4,6 @@
 
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
 
-// int [] array = new int [] {1, 2, 3};
-// Console.WriteLine("[{0}]", string.Join(", ", array));
-
-
 
 int[] FillArray(int num)
 {
