@@ -7,10 +7,12 @@
 // 9012 -> 12
 
 
-Console.WriteLine("Введите число: ");
+Console.Write("Введите число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 int num2 = Math.Abs(num1);
+// вторую переменную ввела исключительно красоты ради - чтобы в ответе появилось число в том виде,
+//  в котором его ввел пользователь - отрицательное или положительное
 
 int digitSum = DigitSum(num2);
 Console.WriteLine($"Сумма чисел в числе {num1} равна {digitSum}");
