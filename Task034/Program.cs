@@ -37,7 +37,7 @@ int EvenNumCount(int[] list)
     return count;
 }
 
-int[] arr = NewArrayRndInt(25, 100, 1000);
+int[] arr = NewArrayRndInt(25, 100, 999);
 PrintArray(arr);
 
 int num = EvenNumCount(arr);
