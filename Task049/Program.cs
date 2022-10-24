@@ -18,13 +18,24 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
     return matrix;
 }
 
-void EvenElemGetSquare(int[,] matr)
+// void EvenElemGetSquare(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             if (i % 2 == 0 && j % 2 == 0) matr[i, j] *= matr[i, j];
+//         }
+//     }
+// }
+
+void EvenElemGetSquare(int[,] matr) // если в счетчике поставить +2, то не нужно проверка If (i % 2 == 0 && j % 2 == 0)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
+    for (int i = 0; i < matr.GetLength(0); i+=2)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)
+        for (int j = 0; j < matr.GetLength(1); j+=2)
         {
-            if (i % 2 == 0 && j % 2 == 0) matr[i, j] *= matr[i, j];
+            matr[i, j] *= matr[i, j];
         }
     }
 }
